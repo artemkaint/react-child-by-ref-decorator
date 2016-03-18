@@ -1,0 +1,35 @@
+{
+  "name": "react-child-by-ref-decorator",
+  "version": "0.0.1",
+  "description": "ECMA-6 Decorator for separate React children by ref property",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/decorator.js -o index.js"
+  },
+  "keywords": [
+    "react",
+    "decorator",
+    "children",
+    "ref"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artemkaint/react-child-by-ref-decorator.git"
+  },
+  "author": "Artem Soltynskiy <artemkaint@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artemkaint/react-child-by-ref-decorator/issues"
+  },
+  "homepage": "https://github.com/artemkaint/react-child-by-ref-decorator#readme",
+  "dependencies": {
+    "babel-preset-stage-0": "^6.5.0",
+    "lodash": "^4.6.1",
+    "react": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
