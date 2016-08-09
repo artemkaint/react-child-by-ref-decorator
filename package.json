@@ -1,10 +1,10 @@
 {
   "name": "react-child-by-ref-decorator",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ECMA-6 Decorator for separate React children by ref property",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/decorator.js -o index.js"
+    "install": "babel src/decorator.js -o index.js"
   },
   "keywords": [
     "react",
