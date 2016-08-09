@@ -9,7 +9,10 @@ export default function childByRefWrapper(ComposedComponent) {
 
     render() {
       const byRef = _.keyBy(React.Children.toArray(this.props.children), 'ref');
-      return <ComposedComponent {...this.props} childrenByRef={byRef}/>;
+      return React.createElement( ComposedComponent, {
+        ...this.props,
+        childrenByRef: byRef
+      });
     }
 
     displayName = `ChildByRefWrapper(${ComposedComponent.displayName || ComposedComponent.name || 'Component'})`
