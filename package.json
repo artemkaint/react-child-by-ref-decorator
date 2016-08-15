@@ -1,11 +1,11 @@
 {
   "name": "react-child-by-ref-decorator",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "description": "ECMA-6 Decorator for separate React children by ref property",
   "main": "index.js",
   "scripts": {
-    "install": "babel src/decorator.js -o index.js",
-    "postinstall": "rm -r src"
+    "build": "babel src --out-file index.js",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
@@ -26,13 +26,12 @@
   "peerDependencies": {
     "react": ">=15.0.0"
   },
-  "dependencies": {
-    "babel-preset-stage-0": "^6.5.0",
-    "lodash": "^4.6.1"
-  },
   "devDependencies": {
     "babel-cli": "^6.6.5",
     "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0"
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "lodash": "^4.6.1",
+    "react": ">=15.0.0"
   }
 }
