@@ -8,13 +8,13 @@ export default function childByRefWrapper(ComposedComponent) {
     };
 
     render() {
-      const byRef = _.keyBy(React.Children.toArray(this.props.children), 'ref');
+      const byRef = _.groupBy(React.Children.toArray(this.props.children), 'ref');
       return React.createElement( ComposedComponent, {
         ...this.props,
         childrenByRef: byRef
       });
     }
 
-    displayName = `ChildByRefWrapper(${ComposedComponent.displayName || ComposedComponent.name || 'Component'})`
+    static displayName = `ChildByRefWrapper(${ComposedComponent.displayName || ComposedComponent.name || 'Component'})`
   };
 }
