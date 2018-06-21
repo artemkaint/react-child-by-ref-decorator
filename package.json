@@ -1,6 +1,6 @@
 {
   "name": "react-child-by-ref-decorator",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "ECMA-6 Decorator for separate React children by ref property",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,9 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "lodash": "^4.6.1",
-    "react": ">=15.0.0"
+    "react": ">=16.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2"
   }
 }
